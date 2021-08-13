@@ -1,4 +1,5 @@
-        'use strict';
+                    'use strict';
+
   let money = 55000,
       income = 'Такси',
       addExpenses = 'Интернет, Квартира, Бензин',
@@ -7,7 +8,7 @@
       period = 5,
       budgetDay = money / 30;
 
-      //alert('Привет Друг!');
+      alert('Привет Друг!');
       console.log('Сообщение в консоли' );
 
       console.log(typeof money);
