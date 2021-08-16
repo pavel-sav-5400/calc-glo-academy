@@ -7,6 +7,7 @@
       mission = 100000, 
       period = 5,
       budgetDay = money / 30;
+      
 
       let eхpenses1 = prompt('Введите обязательную статью расходов'),
           amount1 = +prompt('Во сколько это обойдется?'),
@@ -35,11 +36,32 @@
     case budgetDay < 0:
           console.log('Что то пошло не так');
     }
+    
+                        //месячные расходы
+    const getExpensesMonth = function()  {
+        return amount1 + amount2;
+      
+    };
+    getExpensesMonth();
+    console.log(getExpensesMonth());
 
+                    //накопления за месяц
+    const getAccumulatedMonth = function() {
+      return money - getExpensesMonth();
+    };
+    getAccumulatedMonth();
+    console.log(getAccumulatedMonth());
+    
+    let accumulatedMonth = getAccumulatedMonth();
+
+
+    
     
 
 
       console.log('Сообщение в консоли' );
+
+    
 
       console.log(typeof money);
       console.log(typeof income);
